@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyom</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="translations.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolyo</div>
+            <ul class="nav-menu">
+                <li><a href="#anasayfa" class="nav-link" data-i18n="nav.home">Anasayfa</a></li>
+                <li><a href="#hakkimda" class="nav-link" data-i18n="nav.about">Hakkımda</a></li>
+                <li><a href="#cizimlerim" class="nav-link" data-i18n="nav.drawings">Çizimlerim</a></li>
+                <li><a href="#modellerim" class="nav-link" data-i18n="nav.models">Modellerim</a></li>
+                <li><a href="#projelerim" class="nav-link" data-i18n="nav.projects">Projelerim</a></li>
+                <li><a href="#iletisim" class="nav-link" data-i18n="nav.contact">İletişim</a></li>
+            </ul>
+            <button id="lang-toggle" class="lang-toggle" aria-label="Dil Değiştir">
+                <span class="lang-text" data-i18n="nav.langToggle">TR</span>
+            </button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Tema Değiştir" data-i18n-aria="nav.themeToggle">
+                <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Ana Sayfa -->
+    <section id="anasayfa" class="section hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Merhaba, Ben Egemen</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Teknik Artist</p>
+            <a href="#projelerim" class="cta-button" data-i18n="hero.cta">Projelerimi Keşfet</a>
+        </div>
+    </section>
+
+    <!-- Hakkımda -->
+    <section id="hakkimda" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.text1">Merhaba! Ben Egemen, tasarım ve teknoloji tutkunu bir artistim.</p>
+                    <p data-i18n="about.text2">Hem 3B alanda hem 2B alanda çalışmayı severim. Çizim yapmayı, kod yazmayı ve yeni projeler geliştirmeyi seviyorum.</p>
+                    <p data-i18n="about.text3">Her zaman yeni şeyler öğrenmeye açığım ve yaratıcı projelerde yer almak için sabırsızlanıyorum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Çizimlerim -->
+    <section id="cizimlerim" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="drawings.title">Çizimlerim</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/Cizim1.png" alt="Çizim 1">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="drawings.overlay1">En Gurur Duyduğum Çizimim!</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Cizim2.png" alt="Çizim 2">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="drawings.overlay2">Chibi Tarzı Çizme Denemelerimden Birisi</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Cizim3.png" alt="Çizim 3">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="drawings.overlay3">İnsanlar cidden buraları okuyor mu?</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modellerim -->
+    <section id="modellerim" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="models.title">Modellerim</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/Model1.png" alt="Model 1">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="models.overlay1">Maalesef başka gösterebileceğim fazladan bir model bulamadım o yüzden tek bir tanesini koydum</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projelerim -->
+    <section id="projelerim" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects.title">Projelerim</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-logo">
+                        <img src="images/basaban-logo.png" alt="Proje Logo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name" data-i18n="projects.name">Basaban</h3>
+                        <p class="project-platform" data-i18n="projects.platform">Platform: Android</p>
+                        <p class="project-description" data-i18n="projects.description">3B Bir Puzzle Oyunu</p>
+                        <a href="proje-detay.html" class="project-button" data-i18n="projects.button">DAHA FAZLA BİLGİ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">İletişim</h2>
+            <div class="contact-content">
+                <p class="contact-text" data-i18n="contact.text">Benimle iletişime geçmek isterseniz:</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong data-i18n="contact.email">E-posta:</strong>
+                        <a href="mailto:egemen.unlu@outlook.com">egemen.unlu@outlook.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong data-i18n="contact.social">Sosyal Medya:</strong>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Twitter</a>
+                            <a href="https://www.instagram.com/egemenkun_/" target="_blank">Instagram</a>
+                            <a href="https://github.com/MolotofluAyran" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Portfolyom. <span data-i18n="footer.copyright">Tüm hakları saklıdır.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
