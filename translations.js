@@ -30,7 +30,8 @@ const translations = {
         
         // Models Section
         'models.title': 'Modellerim',
-        'models.overlay1': 'Maalesef başka gösterebileceğim fazladan bir model bulamadım o yüzden tek bir tanesini koydum',
+        'models.overlay1': 'Öylesine yapılmış, Oyunlara eklenmeye uyumlu bir Savaş Orağı!',
+        'models.overlay2': 'Bir kılıç modellemesi!',
         
         // Projects Section
         'projects.title': 'Projelerim',
@@ -93,7 +94,8 @@ const translations = {
         
         // Models Section
         'models.title': 'My Models',
-        'models.overlay1': 'Unfortunately, I couldn\'t find any other models to show, so I just put one',
+        'models.overlay1': 'A casually made, Game-ready War Scythe!',
+        'models.overlay2': 'A sword modeling!',
         
         // Projects Section
         'projects.title': 'My Projects',
