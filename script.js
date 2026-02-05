@@ -93,12 +93,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Theme Toggle (Day/Night Mode)
     // ===================================
     const themeSwitch = document.getElementById('themeSwitch');
-    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    // Safely get theme from localStorage
+    let savedTheme = 'dark'; // default theme
+    try {
+        savedTheme = localStorage.getItem('theme') || 'dark';
+    } catch (e) {
+        console.warn('localStorage not available:', e);
+    }
 
     // Apply saved theme on load
     if (savedTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
         if (themeSwitch) themeSwitch.checked = true;
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+        if (themeSwitch) themeSwitch.checked = false;
     }
     updateTopbarBackground();
 
@@ -112,7 +122,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.documentElement.removeAttribute('data-theme');
             }
 
-            localStorage.setItem('theme', newTheme);
+            try {
+                localStorage.setItem('theme', newTheme);
+            } catch (e) {
+                console.warn('localStorage not available:', e);
+            }
             updateTopbarBackground();
         });
     }
